@@ -1,0 +1,161 @@
+FASE 1 — Fondasi Wajib (HARI 1–2)
+
+Ini WAJIB, kalau skip → nanti nyangkut di framework
+
+1️⃣ Dasar Bahasa (Core JavaScript)
+
+Fokus ke yang sering muncul di React/Vue:
+
+let, const (❌ stop pakai var)
+
+Tipe data:
+
+string, number, boolean
+
+array, object (INI PALING PENTING)
+
+Operator penting:
+
+===, !==
+
+spread operator ...
+
+Template literal
+
+`Halo ${nama}`
+
+🎯 Target: paham baca & nulis object + array tanpa mikir lama
+
+2️⃣ Control Flow
+
+if / else
+
+switch
+
+for, for...of
+
+map, filter, reduce ⚠️ WAJIB
+
+Contoh penting:
+
+data.map(item => item.nama)
+
+🎯 Target: ngerti transform data, bukan cuma looping
+
+FASE 2 — JavaScript Modern (HARI 3–4)
+
+Ini bahasa sehari-hari framework
+
+3️⃣ Function & Arrow Function
+
+Function biasa vs arrow function
+
+Default parameter
+
+Return value
+
+const total = (a, b) => a + b
+
+🎯 Target: ngerti kenapa arrow function dipakai di mana-mana
+
+4️⃣ Object & Destructuring
+
+SANGAT SERING DIPAKAI DI FRAMEWORK
+
+const user = { name: "A", age: 20 }
+const { name, age } = user
+
+Array destructuring:
+
+const [a, b] = [1, 2]
+
+🎯 Target: bisa baca kode destructuring tanpa pusing
+
+5️⃣ Module System
+export default
+export { fungsi }
+import sesuatu from "./file"
+
+🎯 Target: ngerti file-based structure seperti di React/Vue
+
+FASE 3 — Async & API (HARI 5–6)
+
+Ini pembeda junior vs “siap kerja”
+
+6️⃣ Async JavaScript
+
+Promise
+
+async / await
+
+try...catch
+
+const data = await fetch(url)
+
+🎯 Target: ngerti kenapa data nggak langsung ada
+
+7️⃣ Fetch API & JSON
+
+fetch()
+
+GET / POST
+
+JSON.parse() & JSON.stringify()
+
+🎯 Target: bisa ambil data dari API publik & tampilkan
+
+FASE 4 — DOM (MINIMAL SAJA) (HARI 7)
+
+Jangan kebablasan DOM, framework bakal ngurus ini
+
+Pelajari secukupnya:
+
+querySelector
+
+addEventListener
+
+innerHTML
+
+value
+
+🎯 Target: paham event & interaksi user
+
+FASE 5 — Mental Model Framework (HARI 8)
+
+Ini bikin kamu cepat nyambung ke React/Vue
+
+8️⃣ Konsep Wajib Framework
+
+TANPA KODE FRAMEWORK DULU
+
+State (data yang bisa berubah)
+
+Props (data dari luar)
+
+One-way data flow
+
+Component mindset
+
+Contoh mental model:
+
+state = data
+function render(state) { ... }
+
+🎯 Target: ngerti “kenapa framework dibuat”
+
+FASE 6 — MINI PROJECT (HARI 9–10)
+
+Jangan lanjut framework sebelum ini
+
+Project WAJIB (pilih 1–2):
+
+To-do list (CRUD sederhana)
+
+Fetch data API & tampilkan list
+
+Filter & search data
+
+❌ Tanpa framework
+✅ JavaScript murni
+
+🎯 Target: logika dulu, bukan tampilan
