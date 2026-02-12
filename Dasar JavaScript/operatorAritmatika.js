@@ -19,24 +19,24 @@ console.log("Hasil perpangkatan: " + perpangkatan) // output: Hasil perpangkatan
 
 
 // contoh studi kasus penggunaan operator aritmartika pada kasir tokoh, jika barang mencapai 100.000 maka akan mendapatkan diskon 10%
-// let hargaBarang = 25000
-// let jumlahBarang = 5
-// let uangPembeli = 200000 //uang pembeli
-// // hitung total harga
-// let totalHarga = hargaBarang * jumlahBarang
-// // cek apakah total harga mencapai 100.000
-// if (totalHarga >= 100000) {
-//      diskon = totalHarga * 0.10; // hitung diskon 10%
-// }
-// // hitung harga setelah diskon
-// let hargaSetelahDiskon = totalHarga - diskon
+let hargaBarang = 25000
+let jumlahBarang = 5
+let uangPembeli = 200000 //uang pembeli
+// hitung total harga
+let totalHarga = hargaBarang * jumlahBarang
+// cek apakah total harga mencapai 100.000
+if (totalHarga >= 100000) {
+     diskon = totalHarga * 0.10; // hitung diskon 10%
+}
+// hitung harga setelah diskon
+let hargaSetelahDiskon = totalHarga - diskon
 
-// // hitung kembalian
-// let kembalian = uangPembeli - hargaSetelahDiskon
+// hitung kembalian
+let kembalian = uangPembeli - hargaSetelahDiskon
 
-// console.log("Total Haga:" + totalHarga) // output: Total Harga:125000
-// console.log("Harga Setelah Diskon: " + hargaSetelahDiskon) // output: Harga Setelah Diskon: 112500
-// console.log("Kembalian: " + kembalian) // output: Kembalian: 87500
+console.log("Total Haga:" + totalHarga) // output: Total Harga:125000
+console.log("Harga Setelah Diskon: " + hargaSetelahDiskon) // output: Harga Setelah Diskon: 112500
+console.log("Kembalian: " + kembalian) // output: Kembalian: 87500
 
 // contoh dalam bentuk prompt
 let harga = Number(prompt("Masukkan harga barang: "))
@@ -55,3 +55,4 @@ let kembalianUang = uangBayar - totalHargaAkhir
 alert("Total Harga: " + hargaSebelumDiskon) // output: Total Harga: 125000
 alert("Harga Setelah Diskon: " + totalHargaAkhir) // output: Harga Setelah Diskon: 112500
 alert("Kembalian: " + kembalianUang) // output: Kembalian: 87500
+
