@@ -84,3 +84,31 @@ if (totalBelanja > 100000) {
     console.log(`Total belanja Anda: Rp${totalBelanja}`);
     console.log("Terima kasih sudah berbelanja!");
 }
+
+// Nested Looping
+
+for (let baris= 1; baris <= 3; baris++){
+     let barisTeks = "";
+     // looping dalam looping
+     for (let kolom = 1; kolom <= 5; kolom++){
+          barisTeks += `(B${baris}-k${kolom}) `;
+     }
+     console.log(barisTeks);
+}
+
+// // nested looping dinamis membuat bintang
+for (let i = 1; i <= 5; i++){
+     let baris = "";
+     for (let j = 1; j <= i; j++){
+          baris += "*";
+     }    
+     console.log(baris);
+}
+// nested looping statis membuat bintang     
+for (let i = 1; i <= 5; i++) {
+    let teks = "";
+    for (let j = 1; j <= 5; j++) { // Batasnya saya ganti jadi 5 tetap (statis)
+        teks += "*";
+    }
+    console.log(teks);
+}
