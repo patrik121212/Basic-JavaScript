@@ -112,3 +112,34 @@ for (let i = 1; i <= 5; i++) {
     }
     console.log(teks);
 }
+// nested looping pada nested array
+let nama = [
+     ["Andi", "Budi", "Cici"],
+     ["Dedi", "Eka", "Fani"],
+     ["Gina", "Hadi", "Ika"]
+];
+for (let i = 0; i < nama.length; i++) {
+     const baris = nama[i];
+     console.log(`Baris ${i + 1}:`);
+     for (let j = 0; j < baris.length; j++) {
+          console.log(`- ${baris[j]}`);
+     }
+}
+
+// lloping dengan try catch
+// simulasi pembayaran alfamart dengan saldo user
+
+let total_belanja = 500000
+let saldoUser = 300000
+
+try {
+     console.log('Memproses pembayaran...');
+     if (saldoUser < total_belanja) {
+          throw new Error("Saldo tidak cukup untuk melakukan pembayaran.");
+     }
+     saldoUser -= total_belanja;
+     console.log(`Pembayaran berhasil! Sisa saldo Anda: Rp${saldoUser}`);
+} catch (error) {
+     console.log(`Error: ${"pembayaran gagal;"+ error.message}`);
+     
+}
